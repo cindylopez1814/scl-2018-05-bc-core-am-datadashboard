@@ -1,0 +1,17 @@
+.h1{
+}
+#logo {
+  text-align: center;
+ background-color: fuchsia;
+ margin:none;
+ width: 100%;
+ right: auto;
+}
+
+#data {
+  text-align: left;
+  background-color: yellow;
+  margin:none;
+  width: 100%;
+  right: auto;
+}
