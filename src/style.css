@@ -1,17 +1,28 @@
-.h1{
-}
-#logo {
-  text-align: center;
- background-color: fuchsia;
- margin:none;
- width: 100%;
- right: auto;
-}
-
-#data {
+h1{
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
-  background-color: yellow;
-  margin:none;
+  margin-top: 1%;
+}
+.lab{
+  object-fit: scale-down;
+  height: 20vh;
+}
+.logo {
+ width: 100%;
+ text-align: center;
+ border: 1px solid rgb(221, 219, 219);
+}
+.title {
+  background-color: #FFE521;
   width: 100%;
-  right: auto;
+}
+.menu{
+  width: 100%;
+  background-color: #F9F9F8;
+  border: 1px solid rgb(221, 219, 219);
+}
+.user{
+  object-fit: scale-down;
+  height: 15vh;
+  padding: 2%;
 }
