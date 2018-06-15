@@ -1,11 +1,12 @@
 h1{
   font-family: 'Open Sans', sans-serif;
   text-align: left;
-  margin-top: 1%;
+  margin: 2% 0%;
+  font-size: 30px;
 }
 .lab{
   object-fit: scale-down;
-  height: 20vh;
+  height: 12vh;
 }
 .logo {
  width: 100%;
