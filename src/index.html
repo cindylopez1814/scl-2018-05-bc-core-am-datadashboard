@@ -27,44 +27,50 @@
       </div>      
       <div class="row"> <!-- col de la estructura -->
         <div class="col-3 menu">
-        <!-- aqui va usuario  -->
-        <picture>
+          <!-- aqui va usuario  -->
+          <picture>
           <img src="../src/img/no-user.png" alt="user" class="img-fluid user">
-        </picture>
-        <!-- menu desplegable de cohorts sacar de bootstrap -->
-        <div class="row">
-          <div class="dropdown col-12 cohort">
-            <button class="btn btn-sucess dropdown-toggle cohort" type="button" id="dropdownMenuEnlace" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            COHORT
-            </button>   
-            <!-- enlace 'a' con id, para darle funcionalidad -->
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuEnlace">
-              <a id = "enlace1" href="#" class="dropdown-item cohort">cohort1</a>
-              <a id = "botonTwo" href="#" class="dropdown-item cohort">cohort2</a>
-              <a id = "botonThree" href="#" class="dropdown-item cohort">cohort3</a>
-              <a id = "botonFour" href="#" class="dropdown-item cohort">cohort4</a>
-            </div>
-          </div>
-         </div>
-        </div>
-        <div class="col-9"> <!--contenido de data-->
-        <!--div con menu de ordenar / filtrar y buscar bootstrap-->
-        <div class = "row">
-          <div class="col-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#">Ordenar</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+          </picture>
+          <!-- menu desplegable de cohorts sacar de bootstrap -->
+          <div class="row">
+             <div class="dropdown col-12 cohort">
+                <button class="btn btn-sucess dropdown-toggle cohort" type="button" id="dropdownMenuEnlace" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                 COHORTS
+                </button>   
+                  <!-- enlace 'a' con id, para darle funcionalidad -->
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuEnlace">
+                  <a id = "enlace1" href="#" class="dropdown-item cohort">cohort1</a>
+                  <a id = "botonTwo" href="#" class="dropdown-item cohort">cohort2</a>
+                  <a id = "botonThree" href="#" class="dropdown-item cohort">cohort3</a>
+                  <a id = "botonFour" href="#" class="dropdown-item cohort">cohort4</a>
+                </div>
               </div>
-            </nav>
           </div>
         </div>
+
+        <div class="col-9"> <!--contenido de data-->
+          <!--div con menu de ordenar / filtrar y buscar bootstrap-->
+          <div class="row dropdown">
+              <button class="btn btn-secondary dropdown-toggle filtro" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Filtrar
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Orden Alfabético</a>
+                <a class="dropdown-item" href="#">Orden Completitud</a>
+              </div>
+              <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar Alumna" aria-label="Search">
+                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+              </nav>
+          </div>
+        </div>
+          
+
+              
+              
+        
         <!-- div columna lista de alumnas bootstrap-->
         <div><p id = 'prueba'></p></div>
         <!--div completitud curso-->
