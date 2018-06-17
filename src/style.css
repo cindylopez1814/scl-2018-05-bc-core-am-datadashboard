@@ -46,3 +46,12 @@ h1{
   margin: 0%;
   padding: 0%;
 }
+.filtro{
+  background-color: #FFE521;
+  color: #333333;
+
+}
+.dropdown{
+ justify-content: center;
+ top: 10%;
+}
