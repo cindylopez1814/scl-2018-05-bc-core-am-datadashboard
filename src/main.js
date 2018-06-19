@@ -4,7 +4,11 @@ const btnThree = document.getElementById('botonThree');
 const btnFour = document.getElementById('botonFour');
 const tex = document.getElementById('prueba');
 const usuarios = document.getElementById('userReceptor');
+<<<<<<< HEAD
 const user = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
+=======
+const users = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
+>>>>>>> 2ab577541398ef7b87f5b303fab2ee778e17b0c3
 const progressJSON = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
 
 
@@ -13,6 +17,7 @@ btn.addEventListener('click', () => {
 });
 
 
+<<<<<<< HEAD
 fetch(user)
   .then(response => response.json())
   .then(data => {
@@ -28,3 +33,6 @@ const renderseUsers = data => {
     return render;
   });
 };
+=======
+
+>>>>>>> 2ab577541398ef7b87f5b303fab2ee778e17b0c3
