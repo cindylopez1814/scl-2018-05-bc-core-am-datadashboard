@@ -1,19 +1,20 @@
 window.computeUsersStats = (user, progress, courses) =>{
-  /*fetch(userJSON)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-      renderUsers(data);
+  
+  fetch(users)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    renderseUsers(data);
+  });
+
+const renderseUsers = data => {
+  btnTwo.addEventListener('click', () => {
+    const render = data.forEach(element => {
+      return usuarios.innerHTML += `<p>${element.name}</p>`;
     });
-  const renderUsers = data => {
-    btn.addEventListener('click', () => {
-      const render = data.forEach(element => {
-        // element.name === arreglo[i].name
-        return container.innerHTML += `<p>${element.name}</p>`;
-      });
-      return render;
-    });
-  };*/
+    return render;
+  });
+};
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {
