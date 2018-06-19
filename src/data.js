@@ -1,5 +1,5 @@
 window.computeUsersStats = (user, progress, courses) =>{
-  fetch(userJSON)
+  /*fetch(userJSON)
     .then(response => response.json())
     .then(data => {
       console.log(data);
@@ -13,7 +13,7 @@ window.computeUsersStats = (user, progress, courses) =>{
       });
       return render;
     });
-  };
+  };*/
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {
