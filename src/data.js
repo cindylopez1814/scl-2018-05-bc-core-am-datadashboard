@@ -7,14 +7,14 @@ window.computeUsersStats = (user, progress, courses) =>{
     renderseUsers(data);
   });
 
-const renderseUsers = data => {
-  btnTwo.addEventListener('click', () => {
-    const render = data.forEach(element => {
-      return usuarios.innerHTML += `<p>${element.name}</p>`;
+  const renderseUsers = data => {
+   btnTwo.addEventListener('click', () => {
+      const render = data.forEach(element => {
+       return usuarios.innerHTML += `<p>${element.name}</p>`;
+      });
+      return render;
     });
-    return render;
-  });
-};
+  };
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {
