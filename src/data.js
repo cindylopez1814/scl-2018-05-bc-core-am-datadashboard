@@ -1,5 +1,12 @@
 window.computeUsersStats = (user, progress, courses) =>{
+<<<<<<< HEAD
   fetch(usersJSON)
+=======
+  
+<<<<<<< HEAD
+=======
+  fetch(users)
+>>>>>>> upstream/master
   .then(response => response.json())
   .then(data => {
     console.log(data);
@@ -14,8 +21,11 @@ const renderseUsers = data => {
     return render;
   });
 };
+<<<<<<< HEAD
+=======
+>>>>>>> 2ab577541398ef7b87f5b303fab2ee778e17b0c3
+>>>>>>> upstream/master
 };
-
 window.sortUsers = (users, orderBy, orderDirection) => {
 
 };
