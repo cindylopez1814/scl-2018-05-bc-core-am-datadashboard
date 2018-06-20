@@ -1,5 +1,6 @@
 window.computeUsersStats = (user, progress, courses) =>{
   
+<<<<<<< HEAD
   fetch(users)
   .then(response => response.json())
   .then(data => {
@@ -8,6 +9,11 @@ window.computeUsersStats = (user, progress, courses) =>{
   });
 
   
+=======
+};
+window.onload = () =>{
+  dataJson();
+>>>>>>> 6ae2781e5f8dde1728e8ef8f1e43d051ae4e0c9f
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {

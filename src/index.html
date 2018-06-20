@@ -33,10 +33,7 @@
           </picture>
           <!-- menu desplegable de cohorts sacar de bootstrap -->
           <div class="row">
-              <div class="dropdown col-12 cohort">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>                  
+              <div class="dropdown col-12 cohort">             
                  <button class="btn btn-sucess dropdown-toggle cohort" type="button" id="dropdownMenuEnlace" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                   COHORTS
                  </button>   
@@ -67,12 +64,30 @@
                 </form>
               </nav>
           </div>
+          <article id="ranking" class="studentList row">
+            <table id="studentsRanking" class="table col-lg-12">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Lecturas realizadas</th>
+                  <th scope="col">Quizzes Completados</th>
+                  <th scope="col">Retos Completados</th>
+                  <th scope="col">Tiempo consumido</th>
+                  <th scope="col">Progreso (%)</th>
+                </tr>
+              </thead>
+              <tbody id="studentsName">
+    
+              </tbody>
+            </table>
+          </article>
           <!-- div columna lista de alumnas bootstrap-->
-        <div><p id = 'prueba'></p></div>
-        <!--div completitud curso-->
-        <div id = "userReceptor"></div>
-        <!--div completitud alumna-->
-        <div></div>      
+          <div><p id = 'prueba'></p></div>
+          <!--div completitud curso-->
+          <div id = "userReceptor"></div>
+          <!--div completitud alumna-->
+          <div></div>      
         </div>
           
 
