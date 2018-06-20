@@ -4,52 +4,54 @@ const btnThree = document.getElementById('botonThree');
 const btnFour = document.getElementById('botonFour');
 const tex = document.getElementById('prueba');
 const usuarios = document.getElementById('userReceptor');
-<<<<<<< HEAD
-const usersJSON = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
-const progressJSON = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
-const cohortsJSON = '../data/cohorts/cohorts.json';
-=======
-const users = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
-const progress = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
->>>>>>> 5efa72d15825cb83d9cd8a35ba50f2d564dca12c
+const urlUsers = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
+const urlProgress = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
 
 
 btn.addEventListener('click', () => {
   tex.innerHTML = '<h2> Veamos que resulta </h2>';
 });
 
-<<<<<<< HEAD
-
-=======
 fetch(users)
   .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    renderseUsers(data);
+  .then(users => {
+    console.log('primero');
+
+    fetch(urlProgress)
+      .then(response => response.json())
+      .then(Progress => {
+        console.log(Progress);
+        renderseUsers(users, Progress);
+      });
   });
 
-const renderseUsers = data => {
+console.log('segundo');
+const renderseUsers = (users, Progress) => {
   btnTwo.addEventListener('click', () => {
-    const render = data.forEach(element => {
-      return usuarios.innerHTML += `<p>${' Nombre: ' + element.name + ' Sede: ' + element.timezone}</p>`;
+    const render = users.forEach(user => {
+      let userProgress = Progress[user.id]; // aqui se hace el match de users.json con progress.json
+
+      // Cuando se cumpla la condicion entragara el valor correspondiente, si la condicion es falsa, entregara 'sin   info'
+      let percent = 'Sin info';
+      if (userProgress.intro) {
+        percent = userProgress.intro.percent;
+      }
+      return usuarios.innerHTML += `<p>${' Nombre: ' + user.name + ' Sede: ' + user.timezone + ' Porcentaje:' + percent}</p>`;
     });
     return render;
   });
 };
 
-fetch(progress)
-  .then(response => response.json())
-  .then(dataProgress => {
-    console.log(dataProgress);
-    renderseProgress(dataProgress);
-  });
 
+// Evento de boton para el progreso
+/* let test = null;
 const renderseProgress = dataProgress => {
   btnThree.addEventListener('click', () => {
     const render = Object.entries(dataProgress).forEach(elemento => {
-      return usuarios.innerHTML += `<p>${elemento}</p>`;
+      window.test = elemento;
+      let userProgress = elemento[1];
+      // console.log(elemento);
     });
     return render;
   });
-};
->>>>>>> 5efa72d15825cb83d9cd8a35ba50f2d564dca12c
+};*/
