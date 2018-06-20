@@ -35,16 +35,17 @@ h1{
 }
 .cohort{
   color: #333333;
-  width: 100%;
+  width: max-content;
   margin: 3% 0%;
   padding: 0%;
   background-color: #FFE521;
   font-size: 20px;
+  text-align:center;
 }
 .dropdown-item{
   width: 100%;
   margin: 0%;
-  padding: 0%;
+  padding: 0% 10%;
 }
 .filtro{
   background-color: #FFE521;
