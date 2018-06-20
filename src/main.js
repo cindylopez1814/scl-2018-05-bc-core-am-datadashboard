@@ -12,8 +12,7 @@ btn.addEventListener('click', () => {
   tex.innerHTML = '<h2> Veamos que resulta </h2>';
 });
 
-console.log('cero');
-fetch(urlUsers)
+fetch(users)
   .then(response => response.json())
   .then(users => {
     console.log('primero');

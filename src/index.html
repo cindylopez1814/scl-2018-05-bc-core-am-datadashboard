@@ -26,28 +26,27 @@
         </div> <!-- fin col de header -->
       </div>      
       <div class="row"> <!-- col de la estructura -->
-        <div class="col-3 menu">
+        <div class="col-3 menu sticky-top">
           <!-- aqui va usuario  -->
           <picture>
           <img src="../src/img/no-user.png" alt="user" class="img-fluid user">
           </picture>
           <!-- menu desplegable de cohorts sacar de bootstrap -->
           <div class="row">
-             <div class="dropdown col-12 cohort">
-                <button class="btn btn-sucess dropdown-toggle cohort" type="button" id="dropdownMenuEnlace" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                 COHORTS
-                </button>   
-                  <!-- enlace 'a' con id, para darle funcionalidad -->
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuEnlace">
-                  <a id = "boton" href="#" class="dropdown-item cohort">cohort1</a>
-                  <a id = "botonTwo" href="#" class="dropdown-item cohort">cohort2</a>
-                  <a id = "botonThree" href="#" class="dropdown-item cohort">cohort3</a>
-                  <a id = "botonFour" href="#" class="dropdown-item cohort">cohort4</a>
-                </div>
-              </div>
-          </div>
-        </div>
-
+              <div class="dropdown col-12 cohort">
+                 <button class="btn btn-sucess dropdown-toggle cohort" type="button" id="dropdownMenuEnlace" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  COHORTS
+                 </button>   
+                   <!-- enlace 'a' con id, para darle funcionalidad -->
+                 <div class="dropdown-menu cohort" aria-labelledby="dropdownMenuEnlace" aria-expanded="true">
+                   <a id = "boton" href="#" class="dropdown-item cohort">cohort1</a>
+                   <a id = "botonTwo" href="#" class="dropdown-item cohort">cohort2</a>
+                   <a id = "botonThree" href="#" class="dropdown-item cohort">cohort3</a>
+                   <a id = "botonFour" href="#" class="dropdown-item cohort">cohort4</a>
+                 </div>
+               </div>
+           </div>
+         </div>
         <div class="col-9"> <!--contenido de data-->
           <!--div con menu de ordenar / filtrar y buscar bootstrap-->
           <div class="row dropdown">
