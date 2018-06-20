@@ -7,14 +7,7 @@ window.computeUsersStats = (user, progress, courses) =>{
     renderseUsers(data);
   });
 
-  const renderseUsers = data => {
-   btnTwo.addEventListener('click', () => {
-      const render = data.forEach(element => {
-       return usuarios.innerHTML += `<p>${element.name}</p>`;
-      });
-      return render;
-    });
-  };
+  
 };
 
 window.sortUsers = (users, orderBy, orderDirection) => {
