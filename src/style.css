@@ -8,6 +8,10 @@ h1{
   font-weight: bold;
   font-size: 25px;
 }
+h5{
+  margin-top: 8%;
+  padding: 5%;
+}
 .lab{
   object-fit: scale-down;
   height: 12vh;
@@ -31,7 +35,6 @@ h1{
 .user{
   object-fit: scale-down;
   height: 15vh;
-  padding: 5%;
 }
 .cohort{
   color: #333333;
@@ -71,4 +74,7 @@ h1{
 .form-control{
   color: #56F89A;
   border: 1px solid #56F89A;
+}
+tr td:hover{
+  background-color: #56F89A;
 }
