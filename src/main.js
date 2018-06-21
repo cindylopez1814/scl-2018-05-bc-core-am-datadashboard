@@ -8,10 +8,6 @@ const urlUsers = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 const urlProgress = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
 const urlCourses = '../data/cohorts/cohorts.json';
 
-btn.addEventListener('click', () => {
-  tex.innerHTML = '<h2> Veamos que resulta </h2>';
-});
-
 fetch(urlUsers)
   .then(response => response.json())
   .then(users => {
@@ -27,7 +23,7 @@ fetch(urlProgress)
 // se carga primero
 const renderseUsers = (users, Progress) => {
   let rankingNumber = 0;
-  btnTwo.addEventListener('click', () => {
+  btn.addEventListener('click', () => {
     const render = users.forEach(user => {
       rankingNumber ++;
       let userProgress = Progress[user.id]; // aqui se hace el match de users.json con progress.json
@@ -54,17 +50,3 @@ const renderseUsers = (users, Progress) => {
   });
 };
 
-
-// Evento de boton para el progreso
-/* let test = null;
-const renderseProgress = dataProgress => {
-  btnThree.addEventListener('click', () => {
-    const render = Object.entries(dataProgress).forEach(elemento => {
-      window.test = elemento;
-      let userProgress = elemento[1];
-      // console.log(elemento);
-    });
-    return render;
-  });
-};*/
-// <p>${' Nombre: ' + user.name.toUpperCase() + ' Sede: ' + user.timezone + ' Porcentaje:' + percent}</p>`;

@@ -48,11 +48,27 @@ h1{
   padding: 0% 10%;
 }
 .filtro{
-  background-color: #FFE521;
-  color: #333333;
-
+  color: #FF009E;
+  background-color: transparent;
+  background-image: none;
+  border-color: #FF009E;
 }
-.dropdown{
- justify-content: center;
- top: 10%;
+.filter{
+  margin: 3%;
+}
+.dropdown-item:hover{
+  background-color: #FF009E;
+}
+.filtro:hover{
+  background-color: #56F89A;
+  color: black;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #56F89A;
+  border-color: #4e555b;
+}
+.form-control{
+  color: #56F89A;
+  border: 1px solid #56F89A;
 }
