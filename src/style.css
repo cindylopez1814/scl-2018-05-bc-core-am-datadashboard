@@ -26,7 +26,7 @@ h1{
   width: 100%;
   background-color: #F9F9F8;
   border: 1px solid rgb(221, 219, 219);
-  height: 85vh;
+  height: 100vh;
 }
 .user{
   object-fit: scale-down;
@@ -35,7 +35,7 @@ h1{
 }
 .cohort{
   color: #333333;
-  width: max-content;
+  width: 100%;
   margin: 3% 0%;
   padding: 0%;
   background-color: #FFE521;
