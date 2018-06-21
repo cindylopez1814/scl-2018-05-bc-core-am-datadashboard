@@ -4,7 +4,6 @@ const btnThree = document.getElementById('botonThree');
 const btnFour = document.getElementById('botonFour');
 const tex = document.getElementById('prueba');
 const usuarios = document.getElementById('studentsName');
-let rankingNumber = 0;
 const urlUsers = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 const urlProgress = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
 
@@ -27,29 +26,63 @@ fetch(urlUsers)
 
 // se carga primero
 const renderseUsers = (users, Progress) => {
+  let rankingNumber = 0;
   btnTwo.addEventListener('click', () => {
     const render = users.forEach(user => {
+      rankingNumber ++;
       let userProgress = Progress[user.id]; // aqui se hace el match de users.json con progress.json
-      rankingNumber++;
       // Cuando se cumpla la condicion entragara el valor correspondiente, si la condicion es falsa, entregara 'sin   info'
       let percent = 'Sin info';
       if (userProgress.intro) {
         percent = userProgress.intro.percent;
-        let rankingNumber = 0;
       }
       return usuarios.innerHTML += '<tr>' +
       '<td>' + rankingNumber + '</td>' +
-      '<td>' + user[rankingNumber - 1].name.toUpperCase() + '</td>' +
+      '<td>' + user.name.toUpperCase() + '</td>' +
       '<td>' + percent + '</td>' +
       '<td>' + +'</td>' +
       '<td>' + +'</td>' +
       '<td>' + +'</td>' +
       '<td>' + +'</td>' +
-      '</tr>'
+      '</tr>';
     });
     return render;
   });
 };
+
+/*btnFour.addEventListener('click', () => {
+    let procesarCurso= (progressUser)=>{
+      var cursos = progressUser.entriees (progressUser)
+       return cursos.reduce (
+        (x,y) => {
+          return x+y [1].percent},0)/cursos.length;
+        };   console.log(procesarCurso);
+}*/
+
+arrProgress.reduce(
+  (x,y) => {
+    
+  }
+)
+
+
+
+  
+    
+
+
+
+/*btnThree.addEventListener('click', () => {
+  for (let i in urlProgress) {
+    let curso = urlProgress [i];
+    for (let j in curso) {
+      let partes =curso [j];
+    }
+    console.log(i);
+    }
+    return usuarios.innerHTML;
+});
+
 
 
 // Evento de boton para el progreso
@@ -64,4 +97,4 @@ const renderseProgress = dataProgress => {
     return render;
   });
 };*/
-//<p>${' Nombre: ' + user.name.toUpperCase() + ' Sede: ' + user.timezone + ' Porcentaje:' + percent}</p>`;
+// <p>${' Nombre: ' + user.name.toUpperCase() + ' Sede: ' + user.timezone + ' Porcentaje:' + percent}</p>`;
