@@ -39,7 +39,7 @@
                  </button>   
                    <!-- enlace 'a' con id, para darle funcionalidad -->
                  <div class="dropdown-menu cohort" aria-labelledby="dropdownMenuEnlace" aria-expanded="true">
-                   <a id = "boton" href="#" class="dropdown-item cohort">cohort1</a>
+                   <a id = "boton" href="#" class="dropdown-item cohort">LIMA-2018-pre-core-pw</a>
                    <a id = "botonTwo" href="#" class="dropdown-item cohort">cohort2</a>
                    <a id = "botonThree" href="#" class="dropdown-item cohort">cohort3</a>
                    <a id = "botonFour" href="#" class="dropdown-item cohort">cohort4</a>
@@ -49,7 +49,8 @@
          </div>
         <div class="col-9"> <!--contenido de data-->
           <!--div con menu de ordenar / filtrar y buscar bootstrap-->
-          <div class="row dropdown">
+          <div class="row dropdown filter">
+            <div class="col-6 dropright">
               <button class="btn btn-secondary dropdown-toggle filtro" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Filtrar
               </button>
@@ -57,12 +58,13 @@
                 <a class="dropdown-item" href="#">Orden Alfabético</a>
                 <a class="dropdown-item" href="#">Orden Completitud</a>
               </div>
-              <nav class="navbar navbar-light bg-light">
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Buscar Alumna" aria-label="Search">
-                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
-              </nav>
+            </div>   
+            <div class="col-6">
+              <form class="form-inline ">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar Alumna" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 filtro" type="submit">Buscar</button>
+              </form>
+            </div>  
           </div>
           <article id="ranking" class="studentList row">
             <table id="studentsRanking" class="table col-lg-12">
@@ -77,25 +79,9 @@
                   <th scope="col">Lecturas</th>
                 </tr>
               </thead>
-              <tbody id="studentsName">
-    
-              </tbody>
+              <tbody id="studentsName"></tbody>
             </table>
           </article>
-          <!-- div columna lista de alumnas bootstrap-->
-          <div><p id = 'prueba'></p></div>
-          <!--div completitud curso-->
-          <div id = "userReceptor"></div>
-          <!--div completitud alumna-->
-          <div></div>      
-        </div>
-          
-
-              
-              
-        
-        
-        </div>
       </div>  <!-- fin col de la estructura -->
     </div> <!-- Fin container -->  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
