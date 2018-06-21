@@ -6,18 +6,18 @@ const tex = document.getElementById('prueba');
 const usuarios = document.getElementById('studentsName');
 const urlUsers = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
 const urlProgress = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
-const urlCourses = '../data/cohorts/cohorts.json';
 
 fetch(urlUsers)
   .then(response => response.json())
   .then(users => {
     // se carga segundo
 
-fetch(urlProgress)
-  .then(response => response.json())
-  .then(Progress => {
-    console.log(Progress);
-    renderseUsers(users, Progress);
+    fetch(urlProgress)
+      .then(response => response.json())
+      .then(Progress => {
+        console.log(Progress);
+        renderseUsers(users, Progress);
+      });
   });
 
 // se carga primero
@@ -28,10 +28,6 @@ const renderseUsers = (users, Progress) => {
       rankingNumber ++;
       let userProgress = Progress[user.id]; // aqui se hace el match de users.json con progress.json
       // Cuando se cumpla la condicion entragara el valor correspondiente, si la condicion es falsa, entregara 'sin   info'
-      let totalDuration = 'Sin info';
-      if (userProgress.intro) {
-        totalDuration = userProgress.intro.totalDuration;
-      }
       let percent = 'Sin info';
       if (userProgress.intro) {
         percent = userProgress.intro.percent;
@@ -49,4 +45,3 @@ const renderseUsers = (users, Progress) => {
     return render;
   });
 };
-
