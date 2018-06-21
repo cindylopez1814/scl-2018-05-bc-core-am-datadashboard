@@ -46,3 +46,17 @@ const renderseUsers = (users, Progress) => {
   });
 };
 
+const progressPerson= (userProgress) => {//promedio del curso por persona
+  let cursos = userProgress.entriees (userProgress)
+  return cursos.reduce (
+    (x,y) => {
+      return x+y [1].percent
+    },0)/cursos.length;
+};console.log (progressPerson);
+
+
+const PromedioCurso = arrProgress.reduce(//promedio del curso
+  (x,y) => {
+    return x + progressPerson(y[1]);
+  },0)/arrProgress.length;
+  consolge.log(arrProgress)
