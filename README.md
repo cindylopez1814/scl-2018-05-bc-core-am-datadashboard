@@ -48,7 +48,7 @@ Imagenes del prototipo de alta fidelidad:
 
 Imagenes del prototipo de alta fidelidad responsive:
 
-![Alt text](src/UX/Sketchs/sketcha1?raw=true)
-![Alt text](src/UX/Sketchs/sketchb2?raw=true)
-![Alt text](src/UX/Sketchs/sketchc3?raw=true)
-![Alt text](src/UX/Sketchs/sketchd4?raw=true)
+![Alt text](src/UX/Sketchs/sketcha1.png?raw=true)
+![Alt text](src/UX/Sketchs/sketchb2.png?raw=true)
+![Alt text](src/UX/Sketchs/sketchc3.png?raw=true)
+![Alt text](src/UX/Sketchs/sketchd4.png?raw=true)
