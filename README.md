@@ -31,7 +31,7 @@ Cómo crees que el producto les está resolviendo sus problemas: *Actualmente de
 
 ## Sketch (prototipo de baja fidelidad)
 
-Imagenes de los primeros prototipos de diseño de la interfaz:
+**Imagenes de los primeros prototipos de diseño de la interfaz:**
 
 ![Alt text](src/UX/Sketchs/sketh-responsive2-.jpeg?raw=true "hola")
 ![Alt text](src/UX/Sketchs/sketh-responsive2.jpeg?raw=true)
@@ -46,7 +46,7 @@ Imagenes del prototipo de alta fidelidad:
 ![Alt text](src/UX/Sketchs/SKETCHB.png?raw=true)
 ![Alt text](src/UX/Sketchs/SKETCHC.png?raw=true)
 
-Imagenes del prototipo de alta fidelidad responsive:
+**Imagenes del prototipo de alta fidelidad responsive:**
 
 ![Alt text](src/UX/Sketchs/sketcha1.png?raw=true)
 ![Alt text](src/UX/Sketchs/sketchb2.png?raw=true)
