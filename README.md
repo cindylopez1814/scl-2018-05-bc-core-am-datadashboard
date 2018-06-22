@@ -46,6 +46,7 @@ Imagenes del prototipo de alta fidelidad:
 ![Alt text](src/UX/Sketchs/SKETCHB.png?raw=true)
 ![Alt text](src/UX/Sketchs/SKETCHC.png?raw=true)
 
+**link figma:**
 https://www.figma.com/proto/b0x0xKpT0zv7WTMUfc1wQrxX/Untitled?scaling=scale-down&node-id=7%3A177
 
 **Imagenes del prototipo de alta fidelidad responsive:**
@@ -55,4 +56,5 @@ https://www.figma.com/proto/b0x0xKpT0zv7WTMUfc1wQrxX/Untitled?scaling=scale-down
 ![Alt text](src/UX/Sketchs/sketchc3.png?raw=true)
 ![Alt text](src/UX/Sketchs/sketchd4.png?raw=true)
 
+**link figma:**
 https://www.figma.com/proto/PExUnevXAqko8rXhNRklKwbH/esquema?node-id=9%3A65&scaling=contain
