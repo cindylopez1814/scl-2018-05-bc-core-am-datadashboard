@@ -72,3 +72,10 @@ h1{
   color: #56F89A;
   border: 1px solid #56F89A;
 }
+
+#imagen {
+  text-align: center;
+  height: 50%;
+  width: 50%;
+  display: none;
+}
