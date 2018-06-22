@@ -33,7 +33,7 @@ Cómo crees que el producto les está resolviendo sus problemas: *Actualmente de
 
 Imagenes de los primeros prototipos de diseño de la interfaz:
 
-![Alt text](src/UX/sketh-responsive2-.jpeg?raw=true"hola")
+![Alt text](src/UX/sketh-responsive2-.jpeg?raw=true "hola")
 ![Alt text](src/UX/sketh-responsive2.jpeg?raw=true)
 ![Alt text](src/UX/sketch1-.jpeg?raw=true)
 ![Alt text](src/UX/sketch1.jpeg?raw=true)
@@ -42,13 +42,13 @@ Imagenes de los primeros prototipos de diseño de la interfaz:
 
 Imagenes del prototipo de alta fidelidad:
 
-![Alt text](src/UX/SKETCHA.png)
-![Alt text](src/UX/SKETCHB.png)
-![Alt text](src/UX/SKETCHC.png)
+![Alt text](src/UX/SKETCHA.png?raw=true)
+![Alt text](src/UX/SKETCHB.png?raw=true)
+![Alt text](src/UX/SKETCHC.png?raw=true)
 
 Imagenes del prototipo de alta fidelidad responsive:
 
-![Alt text](src/UX/sketcha1)
-![Alt text](src/UX/sketchb2)
-![Alt text](src/UX/sketchc3)
-![Alt text](src/UX/sketchd4)
+![Alt text](src/UX/sketcha1?raw=true)
+![Alt text](src/UX/sketchb2?raw=true)
+![Alt text](src/UX/sketchc3?raw=true)
+![Alt text](src/UX/sketchd4?raw=true)
