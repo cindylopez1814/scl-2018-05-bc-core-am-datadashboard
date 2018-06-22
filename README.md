@@ -33,7 +33,7 @@ Cómo crees que el producto les está resolviendo sus problemas: *Actualmente de
 
 Imagenes de los primeros prototipos de diseño de la interfaz:
 
-![Alt text](src/UX/sketh-responsive2-.jpeg?raw=true "hola")
+![Alt text](src/UX/Sketchs/sketh-responsive2-.jpeg?raw=true "hola")
 ![Alt text](src/UX/sketh-responsive2.jpeg?raw=true)
 ![Alt text](src/UX/sketch1-.jpeg?raw=true)
 ![Alt text](src/UX/sketch1.jpeg?raw=true)
