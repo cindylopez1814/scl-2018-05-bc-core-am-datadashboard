@@ -33,10 +33,10 @@ Cómo crees que el producto les está resolviendo sus problemas: *Actualmente de
 
 Imagenes de los primeros prototipos de diseño de la interfaz:
 
-![Alt text](../src/UX/sketh-responsive2-.jpeg)
-![Alt text](../src/UX/sketh-responsive2.jpeg)
-![Alt text](../src/UX/sketch1-.jpeg)
-![Alt text](../src/UX/sketch1.jpeg)
+![Alt text](src/UX/sketh-responsive2-.jpeg)
+![Alt text](src/UX/sketh-responsive2.jpeg)
+![Alt text](src/UX/sketch1-.jpeg)
+![Alt text](src/UX/sketch1.jpeg)
 
 ##Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
 
