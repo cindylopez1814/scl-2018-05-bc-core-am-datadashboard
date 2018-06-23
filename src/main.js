@@ -5,10 +5,9 @@ window.onload = () => {
   const btnFour = document.getElementById('botonFour');
   const tex = document.getElementById('prueba');
   const usuarios = document.getElementById('studentsName');
-  const urlUsers = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
-  const urlProgress = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
+   
 
-  fetch(urlUsers)
+  /* fetch(urlUsers)
     .then(response => response.json())
     .then(users => {
     // se carga segundo
@@ -45,5 +44,5 @@ window.onload = () => {
       });
       return render;
     });
-  };
+  };*/
 };
