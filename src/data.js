@@ -2,10 +2,10 @@ window.onload = () => {
   dataBase();
 };
 // Funcion para abreviar
-const hashValues = (h) => {
-  return Object.keys(h).map(k => {
- return h[k]
-;});
+const hashValues = (remplace) => {
+  return Object.keys(remplace).map(value => {
+    return remplace[value]; 
+  });
 };
 // Declarar variables vacias
 let users, progress, courses, coursesProgress; 
@@ -28,14 +28,11 @@ const dataBase = () => {
         user = users[0];
         progress = responseJSON[1];
         cohorts = responseJSON[2];
-        courses = progress.find(element => element[0] === user.id)[1];
       });
       computeUsersStats(users, progress, courses);  
       evento(cohorts);
-      tablaData(users);
     });
 };
-
 
 // Calculo de la estadistica de un usuario
 const updateUserStat = (user, progresses) => {
@@ -87,13 +84,13 @@ const updateUserStat = (user, progresses) => {
   }).length;
   const quizTotal = quizzes.length;
   const quizPercent = quizCompleted / quizzes.length;
-  const scoreSum = quizzes.reduce((firs, second) => {
-    return x + second.score; 
+  const scoreSum = quizzes.reduce((first, second) => {
+    return first + second.score; 
   }, 0);
   const scoreAvg = scoreSum / quizzes.length;
 
   user.stats = {
-    percent: courses.intro.percent / courses.length,
+    percent: percentTotal / coursesProgress.length,
     reads: {
       total: readTotal,
       completed: readCompleted,
@@ -118,6 +115,7 @@ window.computeUsersStats = (users, progress, courses) => {
   users.forEach(user => {
     updateUserStat(user, progress[user.id]);
   });
+  
 };
 
 
