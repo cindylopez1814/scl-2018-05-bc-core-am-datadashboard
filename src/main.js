@@ -19,8 +19,8 @@ const evento = cohorts => {
   });  
 };
 
-// Este evento no se esta ejecutando
-// Evento para tabla de 
+// Este evento no se esta ejecutando, debiera ejecutar al presionar cualquir cohort
+// Evento para tabla de usuarios.
 const draw = (user) => {     
   container.addEventListener('click', () => { 
     updateUserStat(user, progresses);
