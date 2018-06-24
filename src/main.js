@@ -16,15 +16,18 @@ const evento = cohorts => {
       lim.appendChild(cohort);
       contenedorCohorts.appendChild(lim);
     }
-  });
-  // Este evento no se esta ejecutando
-    // Evento para tabla de datos
-    container.addEventListener('click', () => { 
-      updateUserStat(user, progresses)
-      // contData.classList.remove('d-none');
-        for (let i = 0; i < users.length; i++) {
-          rankingNumber ++;
-            usuarios.innerHTML += '<tr>' +
+  });  
+};
+
+// Este evento no se esta ejecutando
+// Evento para tabla de 
+const draw = (user) => {     
+  container.addEventListener('click', () => { 
+    updateUserStat(user, progresses);
+    // contData.classList.remove('d-none');
+    for (let i = 0; i < users.length; i++) {
+      rankingNumber ++;
+      usuarios.innerHTML += '<tr>' +
             '<td>' + rankingNumber + '</td>' + 
             '<td>' + users[i].name.toUpperCase() + '</td>' + // nombre
             '<td>' + user.stats.percent + '</td>' + // porcentaje 
@@ -37,7 +40,6 @@ const evento = cohorts => {
             '<td>' + user.stats.quizzes.scoreSum + '</td>' + // score
             '<td>' + user.stats.quizzes.scoreAvg + '</td>' + // promedio quizzes
             '</tr>';
-        }
-      });
-    
+    }
+  });
 };

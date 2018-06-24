@@ -37,7 +37,6 @@ const dataBase = () => {
 // Calculo de la estadistica de un usuario
 const updateUserStat = (user, progresses) => {
   let coursesProgress = hashValues(progresses);
-  console.log(coursesProgress);
   let percentTotal = coursesProgress.reduce((first, second) => {
     return first + second.percent;
   }, 0);
@@ -109,13 +108,13 @@ const updateUserStat = (user, progresses) => {
       scoreAvg: scoreAvg
     },
   };
+  console.log(user.stats);
 };
 
 window.computeUsersStats = (users, progress, courses) => {
   users.forEach(user => {
     updateUserStat(user, progress[user.id]);
   });
-  
 };
 
 
