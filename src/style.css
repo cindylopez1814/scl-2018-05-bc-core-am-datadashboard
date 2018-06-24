@@ -8,6 +8,10 @@ h1{
   font-weight: bold;
   font-size: 25px;
 }
+h5{
+  margin-top: 8%;
+  padding: 5%;
+}
 .lab{
   object-fit: scale-down;
   height: 12vh;
@@ -31,7 +35,6 @@ h1{
 .user{
   object-fit: scale-down;
   height: 15vh;
-  padding: 5%;
 }
 .cohort{
   color: #333333;
@@ -42,10 +45,15 @@ h1{
   font-size: 20px;
   text-align:center;
 }
-.dropdown-item{
+li{
+  font-size: 20px;
+  border:1px white solid;
   width: 100%;
   margin: 0%;
   padding: 0% 10%;
+}
+#contData{
+  display: block;
 }
 .filtro{
   color: #FF009E;
@@ -56,7 +64,7 @@ h1{
 .filter{
   margin: 3%;
 }
-.dropdown-item:hover{
+li:hover{
   background-color: #FF009E;
 }
 .filtro:hover{
@@ -68,10 +76,14 @@ h1{
   background-color: #56F89A;
   border-color: #4e555b;
 }
+#ranking{
+  margin: 5% 5%;
+}
 .form-control{
   color: #56F89A;
   border: 1px solid #56F89A;
 }
+<<<<<<< HEAD
 
 #imagen {
   text-align: center;
@@ -79,3 +91,17 @@ h1{
   width: 50%;
   display: none;
 }
+=======
+tr td:hover{
+  background-color: #56F89A;
+}
+
+@media all and (max-width: 700px) {
+  [class*="col-"] {
+      width: 100%
+  }
+  .col-3{
+      width:25%;
+  }
+}
+>>>>>>> upstream/master
