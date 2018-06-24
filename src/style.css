@@ -83,25 +83,19 @@ li:hover{
   color: #56F89A;
   border: 1px solid #56F89A;
 }
-<<<<<<< HEAD
-
-#imagen {
-  text-align: center;
-  height: 50%;
-  width: 50%;
-  display: none;
-}
-=======
 tr td:hover{
   background-color: #56F89A;
 }
 
-@media all and (max-width: 700px) {
-  [class*="col-"] {
-      width: 100%
+@media screen and (max-width: 700px) {
+  table {
+    width: 100%;
   }
-  .col-3{
-      width:25%;
+  thead {
+    display: none;
   }
+  tr {
+    background-color: inherit;
+  }
+
 }
->>>>>>> upstream/master
