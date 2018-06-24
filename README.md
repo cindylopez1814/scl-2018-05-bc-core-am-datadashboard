@@ -40,7 +40,7 @@ Cómo crees que el producto les está resolviendo sus problemas: *Actualmente de
 
 ## Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
 
-Imagenes del prototipo de alta fidelidad:
+**Imagenes del prototipo de alta fidelidad:**
 
 ![Alt text](src/UX/Sketchs/SKETCHA.png?raw=true)
 ![Alt text](src/UX/Sketchs/SKETCHB.png?raw=true)
@@ -59,4 +59,5 @@ https://www.figma.com/proto/b0x0xKpT0zv7WTMUfc1wQrxX/Untitled?scaling=scale-down
 **link figma:**
 https://www.figma.com/proto/PExUnevXAqko8rXhNRklKwbH/esquema?node-id=9%3A65&scaling=contain
 
-## 
+**Link organizacion**
+https://trello.com/b/Vob9orGu/data-dashboard
