@@ -7,6 +7,7 @@ let rankingNumber = 0;
 
 // Creando evento para vizualisar cohorts
 const evento = cohorts => {
+  console.log('probando evento')
   btn.addEventListener('click', () => {
     for (let i = 0; i < cohorts.length; i++) {
       const contenedorCohorts = document.createElement('li');
@@ -18,8 +19,3 @@ const evento = cohorts => {
     }
   });  
 };
-
-// Este evento no se esta ejecutando, debiera ejecutar al presionar cualquir
-// Evento para tabla de usuarios.
-
-  

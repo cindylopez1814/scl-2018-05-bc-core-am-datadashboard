@@ -115,11 +115,7 @@ const updateUserStat = (user, progresses) => {
       rankingNumber ++;
       usuarios.innerHTML += '<tr>' +
             '<td>' + rankingNumber + '</td>' + 
-            '<td>' + users[i].name.toUpperCase + '</td>' + // nombre
             '<td>' + user.stats.percent + '</td>' + // porcentaje 
-            '<td>' + user.stats.reads.total + '</td>' + // total lectura
-            '<td>' + user.stats.reads.percent + '</td>' + // % lectura
-            '<td>' + user.stats.exercises.total + '</td>' + // total ejercicos
             '<td>' + user.stats.exercises.percent + '</td>' + // % ejercicios
             '<td>' + user.stats.quizzes.total + '</td>' + // total quizes
             '<td>' + Math.round(user.stats.quizzes.percent) + '</td>' + // % quizze
@@ -129,6 +125,7 @@ const updateUserStat = (user, progresses) => {
     };
   });
 };
+
 
 window.computeUsersStats = (users, progress, courses) => {
   users.forEach(user => {
