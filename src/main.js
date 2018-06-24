@@ -1,48 +1,39 @@
-const btn = document.getElementById('boton');
-const btnTwo = document.getElementById('botonTwo');
-const btnThree = document.getElementById('botonThree');
-const btnFour = document.getElementById('botonFour');
-const tex = document.getElementById('prueba');
+const btn = document.getElementById('dropdownMenuEnlace');
+const container = document.getElementById('menuCohort');
 const usuarios = document.getElementById('studentsName');
-const urlUsers = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
-const urlProgress = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json'; 
+const contData = document.getElementById('contData');
+let cohort;
+let rankingNumber = 0;
 
-fetch(urlUsers)
-  .then(response => response.json())
-  .then(users => {
-    // se carga segundo
-
-    fetch(urlProgress)
-      .then(response => response.json())
-      .then(Progress => {
-        console.log(Progress);
-        renderseUsers(users, Progress);
-      });
-  });
-
-// se carga primero
-const renderseUsers = (users, Progress) => {
-  let rankingNumber = 0;
+// Creando evento para vizualisar cohorts
+const evento = cohorts => {
   btn.addEventListener('click', () => {
-    const render = users.forEach(user => {
-      rankingNumber ++;
-      let userProgress = Progress[user.id]; // aqui se hace el match de users.json con progress.json
-      // Cuando se cumpla la condicion entragara el valor correspondiente, si la condicion es falsa, entregara 'sin   info'
-      let percent = 'Sin info';
-      if (userProgress.intro) {
-        percent = userProgress.intro.percent;
-      }
-      return usuarios.innerHTML += '<tr>' +
-      '<td>' + rankingNumber + '</td>' +
-      '<td>' + user.name.toUpperCase() + '</td>' +
-      '<td>' + percent + '</td>' +
-      '<td>' + +'</td>' +
-      '<td>' + +'</td>' +
-      '<td>' + +'</td>' +
-      '<td>' + +'</td>' +
-      '</tr>';
-    });
-    return render;
+    for (let i = 0; i < cohorts.length; i++) {
+      const contenedorCohorts = document.createElement('li');
+      container.appendChild(contenedorCohorts);
+      const lim = document.createElement('a');
+      cohort = document.createTextNode(cohorts[i].id);
+      lim.appendChild(cohort);
+      contenedorCohorts.appendChild(lim);
+    }
   });
 };
 
+// Evento para tabla de datos
+const tablaData = users => { 
+  container.addEventListener('click', () => {
+    //contData.classList.remove('d-none');
+    for (let i = 0; i < users.length; i++) {
+      rankingNumber ++;
+      usuarios.innerHTML += '<tr>' +
+          '<td>' + rankingNumber + '</td>' +
+          '<td>' + users[i].name.toUpperCase() + '</td>' +
+          '<td>' + users.stats.percent + '</td>' +
+          '<td>' + +'</td>' +
+          '<td>' + +'</td>' +
+          '<td>' + +'</td>' +
+          '<td>' + +'</td>' +
+          '</tr>';
+    };      
+  });
+};

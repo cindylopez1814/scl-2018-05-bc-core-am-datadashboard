@@ -45,10 +45,15 @@ h5{
   font-size: 20px;
   text-align:center;
 }
-.dropdown-item{
+li{
+  font-size: 20px;
+  border:1px white solid;
   width: 100%;
   margin: 0%;
   padding: 0% 10%;
+}
+#contData{
+  display: block;
 }
 .filtro{
   color: #FF009E;
@@ -59,7 +64,7 @@ h5{
 .filter{
   margin: 3%;
 }
-.dropdown-item:hover{
+li:hover{
   background-color: #FF009E;
 }
 .filtro:hover{
@@ -71,10 +76,22 @@ h5{
   background-color: #56F89A;
   border-color: #4e555b;
 }
+#ranking{
+  margin: 5% 5%;
+}
 .form-control{
   color: #56F89A;
   border: 1px solid #56F89A;
 }
 tr td:hover{
   background-color: #56F89A;
+}
+
+@media all and (max-width: 700px) {
+  [class*="col-"] {
+      width: 100%
+  }
+  .col-3{
+      width:25%;
+  }
 }
