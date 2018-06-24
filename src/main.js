@@ -6,12 +6,12 @@ const tex = document.getElementById('prueba');
 
 
 
-fetch(urlUsers)
+fetch(urls.User)
   .then(response => response.json())
   .then(users => {
     // se carga segundo
 
-    fetch(urlProgress)
+    fetch(urls.Progress)
       .then(response => response.json())
       .then(Progress => {
         console.log(Progress);

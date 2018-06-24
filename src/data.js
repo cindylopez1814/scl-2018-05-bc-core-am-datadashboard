@@ -19,10 +19,10 @@ const init = () => {
   promises.all= ([fetch(urls.user)],[fetch(urls.progress)],[fetch (urls.cohorts)])
   .then (values => {
     return Promise.all(values.map(element => { return element.json()}));
-  }
-} 
+  });
+};
 
-window.onload = () =>{
+window.onload = () => {
   dataJson();
 };
 
