@@ -20,6 +20,3 @@ const evento = cohorts => {
   });  
 };
 
-// Este evento no se esta ejecutando
-// Evento para tabla de 
-
