@@ -87,6 +87,7 @@ const updateUserStat = (user, progresses) => {
     return first + second.score; 
   }, 0);
   const scoreAvg = scoreSum / quizzes.length;
+  
 
   user.stats = {
     percent: percentTotal / coursesProgress.length,
@@ -109,6 +110,24 @@ const updateUserStat = (user, progresses) => {
     },
   };
   console.log(user.stats);
+  container.addEventListener('click', () => { 
+    for (let i = 0; i < users.length; i++) {
+      rankingNumber ++;
+      usuarios.innerHTML += '<tr>' +
+            '<td>' + rankingNumber + '</td>' + 
+            '<td>' + users[i].name.toUpperCase + '</td>' + // nombre
+            '<td>' + user.stats.percent + '</td>' + // porcentaje 
+            '<td>' + user.stats.reads.total + '</td>' + // total lectura
+            '<td>' + user.stats.reads.percent + '</td>' + // % lectura
+            '<td>' + user.stats.exercises.total + '</td>' + // total ejercicos
+            '<td>' + user.stats.exercises.percent + '</td>' + // % ejercicios
+            '<td>' + user.stats.quizzes.total + '</td>' + // total quizes
+            '<td>' + Math.round(user.stats.quizzes.percent) + '</td>' + // % quizze
+            '<td>' + user.stats.quizzes.scoreSum + '</td>' + // score
+            '<td>' + Math.round(user.stats.quizzes.scoreAvg) + '</td>' + // promedio quizzes
+            '</tr>';
+    };
+  });
 };
 
 window.computeUsersStats = (users, progress, courses) => {
