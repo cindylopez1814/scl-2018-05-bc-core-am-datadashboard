@@ -7,7 +7,6 @@ let rankingNumber = 0;
 
 // Creando evento para vizualisar cohorts
 const evento = cohorts => {
-  console.log('probando evento')
   btn.addEventListener('click', () => {
     for (let i = 0; i < cohorts.length; i++) {
       const contenedorCohorts = document.createElement('li');
