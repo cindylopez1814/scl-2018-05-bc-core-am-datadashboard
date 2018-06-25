@@ -1,0 +1,35 @@
+1.- Hoy, como revisas los avances de las alumnas? (datos guardados en LMS)
+
+no existe, excel manual
+
+2.- Cada cuanto o haces? en que momento? 
+
+todos los dias
+
+3.- (De la manera que mencionas) Cuales son las tareas que te facilita? (lo que este proceso de acomodo) ¿Que quisieras mantener?
+
+
+4.- Algo que te gustaria cambiar, mejorar para facilitarte el trabajo?
+
+
+5.- Cuales datos/items crees que son los mas relevante, y deseas dar enfasis en este producto?
+
+aprendisaje, porcentaje, 
+
+6.- Que esperas poder realizar con la nueva interfaz de datos?
+
+
+7.- Como te imaginas esta interfaz? (diseño, interaccion, informacion)  
+
+
+5 training manager 5 sedes.
+fotos identificadora
+pluss, escribir observaciones
+
+
+Quiénes son los principales usarios de producto.TM de laboratoria
+Cuáles son los objetivos de estos usarios en relación con el producto. REVISAR EL AVANCE DE LAS ALUMNAS, VERIFICAR CUALES SON LOS PUNTOS DEBILES Y FUERTES, 
+Cuáles son los datos más relevantes que el usuario quiere ver en la interfaz y por qué. Cómo los descubriste. DESEA PODER ORDENAR LA LISTA DE ALUMNAS POR PORCENTAJE DE COMPLETITUD
+Cuándo revisa normalmente estos datos TODOS LOS DIAS, DEPENDIENDO DE LOS EJERCICIOS QUE REALICEMOS.
+Cómo crees que el producto les está resolviendo sus problemas. ACTUALMENTE DE MANERA MANUAL LE ESTA DEMORANDO EL TRABAJO YA QUE DEBE CLASIFICARLOS UNO A UNO
+Cómo fue tu proceso de diseño.
