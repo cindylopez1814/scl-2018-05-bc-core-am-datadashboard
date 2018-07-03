@@ -145,3 +145,12 @@ window.filterUsers = (users, search) => {
 window.processCohortData = (options) => {
 
 };
+const computeUsersStats = (users, progress, courses) => {
+
+  users.forEach(user => {
+    updateUserStat(user, progress[user.id]);
+  });
+
+}
+
+init();
