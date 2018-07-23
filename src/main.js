@@ -3,7 +3,24 @@ const usuarios = document.getElementById('studentsName'); // aqui se impirme la 
 const contData = document.getElementById('contData');
 let rankingNumber = 0;
 
-
-const userJson = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
-const progresJson = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json';
+// rutas para acceder a los json
+const usersJson = '../data/cohorts/lim-2018-03-pre-core-pw/users.json';
+const progressJson = '../data/cohorts/lim-2018-03-pre-core-pw/progress.json';
 const cohortsJson = '../data/cohorts/cohorts.json';
+
+Promise.all([
+  fetch(usersJson),
+  fetch(progressJson),
+  fetch(cohortsJson)
+]).then(
+  (responses) => { // engloba todas las promesas
+    return Promise.all(responses.map((response) => {
+      return response.json();
+      console.log(response.json);
+    }));
+  }
+).then((responseJSON)=>{
+  users = responseJSON[0];
+  progress = Object.entries(responseJSON[1]);
+});
+
