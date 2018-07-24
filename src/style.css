@@ -9,7 +9,7 @@ h1{
   background-color: #FFE521;
   padding: 0%;
 }
-..navbar-brand{
+.navbar-brand{
   padding: 0%;
 }
 .navbar-toggler{
@@ -55,19 +55,22 @@ h1{
 #contData{
   display: block;
 }
-.filtro{
+.filter{
   color: #FF009E;
   background-color: transparent;
   background-image: none;
   border-color: #FF009E;
+  margin-left: 50%;
 }
-.filter{
+.search{
   margin: 3%;
+  display: inline;
 }
-li:hover{
+li:hover,
+.cohort:hover{
   background-color: #FF009E;
 }
-.filtro:hover{
+.filter:hover{
   background-color: #56F89A;
   color: black;
 }
@@ -99,6 +102,13 @@ tr td:hover{
   }
   .title{
     margin-left: 5%;
+  }
+  .dropright{
+    width: 100%;
+    margin: 0%;
+  }
+  .my-sm-0{
+    width: 100%;
   }
 
 }

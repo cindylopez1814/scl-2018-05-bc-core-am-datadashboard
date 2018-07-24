@@ -63,24 +63,22 @@
     <section class="col-sm-9" id="contData">
       <!--contenido de data-->
       <!--div con menu de ordenar / filtrar y buscar bootstrap-->
-      <div class="row dropdown filter">
-        <div class="col-sm-6 dropright">
-          <button class="btn btn-secondary dropdown-toggle filtro" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Filtrar
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Orden Alfabético</a>
-            <a class="dropdown-item" href="#">Orden Completitud</a>
+      <div class="dropdown search">
+        <form class="form-inline ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar Alumna" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          <div class="dropright">
+            <button class="dropright btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Filtrar
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Orden Alfabético</a>
+              <a class="dropdown-item" href="#">Orden Completitud</a>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <form class="form-inline ">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar Alumna" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 filtro" type="submit">Buscar</button>
-          </form>
-        </div>
       </div>
+      </form>
       <article id="ranking" class="studentList row">
         <table id="studentsRanking" class="table col-sm-12 table-responsive-sm table-hover">
           <thead>
