@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item liNav">
-          <button class="btn btn-sucess cohort" type="button" id="btnLima">
+          <button class="btn btn-sucess cohort" type="button" id="">
             LIMA
           </button>
         </li>
@@ -62,16 +62,15 @@
       <!--div con menu de ordenar / filtrar y buscar bootstrap-->
       <div class="dropdown cont-search">
         <form class="form-inline ">
-          <input class="form-control mr-sm-2 search" type="search" placeholder="Buscar Alumna" aria-label="Search">
+          <input class="form-control mr-sm-2 search" onkeyup="searchStudents()"id = "searchAlumnas" type="search" placeholder="Buscar Alumna" aria-label="Search">
           <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
           <div class="dropright">
-            <button class="dropright btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" onclick ="onToggleSort()"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Filtrar
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Orden Alfabético</a>
-              <a class="dropdown-item" href="#">Orden Completitud</a>
+                <a  class="dropdown-item">Orden Alfabético</a>
+                <a class="dropdown-item">Orden Completitud</a>
             </div>
           </div>
       </div>
@@ -80,7 +79,6 @@
         <table id="studentsRanking" class="table col-sm-12 table-responsive-sm table-hover">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Nombre</th>
               <th scope="col">Progreso %</th>
               <th scope="col">Lecturas Completadas</th>
@@ -89,8 +87,6 @@
               <th scope="col">Ejercicios %</th>
               <th scope="col">Quizzes Completados</th>
               <th scope="col">Quizzes %</th>
-              <th scope="col">Score</th>
-              <th scope="col">Score %</th>
             </tr>
           </thead>
           <tbody id="studentsName"></tbody>

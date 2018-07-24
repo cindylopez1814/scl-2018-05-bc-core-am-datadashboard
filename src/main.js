@@ -52,7 +52,7 @@ btnLima.addEventListener('click', () => {
 
 function onToggleSort() {
   const direction = dropdownMenuButton.innerText;
-  if (direction == 'ASC') {
+  if (direction === 'ASC') {
     dropdownMenuButton.innerText = 'DESC';
   } else {
     dropdownMenuButton.innerText = 'ASC';
