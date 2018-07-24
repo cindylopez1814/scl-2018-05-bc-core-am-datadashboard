@@ -58,17 +58,17 @@
           <!--div con menu de ordenar / filtrar y buscar bootstrap-->
           <div class="row dropdown filter">
             <div class="col-sm-6 dropright">
-              <button class="btn btn-secondary dropdown-toggle filtro" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle filtro" type="button" id="dropdownMenuButton" onclick ="onToggleSort()"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                  Filtrar
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Orden Alfabético</a>
+                <a  class="dropdown-item">Orden Alfabético</a>
                 <a class="dropdown-item" href="#">Orden Completitud</a>
               </div>
             </div>   
             <div class="col-sm-6">
               <form class="form-inline ">
-                <input class="form-control mr-sm-2" type="search" id = "searchAlumnas" placeholder="Buscar Alumna" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" onkeyup="searchStudents()"id = "searchAlumnas" placeholder="Buscar Alumna" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0 filtro" type="submit" onclick="searchStudents()">Buscar</button>
               </form>
             </div>  
@@ -77,7 +77,6 @@
             <table id="studentsRanking" class="table col-sm-12 table-responsive-sm table-hover">
               <thead>
                 <tr>
-                  <th scope="col">#</th>
                   <th scope="col">Nombre</th>
                   <th scope="col">Progreso %</th>
                   <th scope="col">Lecturas Completadas</th>

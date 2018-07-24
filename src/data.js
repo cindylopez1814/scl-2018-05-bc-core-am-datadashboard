@@ -88,7 +88,25 @@ window.computeUsersStats = (users, progress, courses) => {
 
 
 window.sortUsers = (users, orderBy, orderDirection) => {
+  if (orderBy === 'name') {
+    return users.sort(function(a, b) {
+      if (orderDirection == 'ASC') {
+        return a.name.localCompare(b.name);
+      } else {
+        return a.name.localCompare(b.name) * -1;
+      }
+    });
+  }
 
+  if (orderBy === 'percent') {
+    return users.sort(function(a, b) {
+      if (orderDirection == 'ASC') {
+        return a.stats.percent - b.stats.percent;
+      } else {
+        return (a.stats.percent - b.stats.percent) * -1;
+      }
+    });
+  }
 };
 
 window.filterUsers = (users, search) => {

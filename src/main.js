@@ -1,7 +1,6 @@
 const btnLima = document.getElementById('btnLima'); // boton que muestra  a las alumnas
 const dataAlumnas = document.getElementById('studentsName'); // aqui se impirme la tabla
 const contData = document.getElementById('contData');
-let rankingNumber = 0;
 
 let users = null;
 let progress = null;
@@ -38,7 +37,6 @@ btnLima.addEventListener('click', () => {
       user.stats.quizzes = {};
     } else {
       dataAlumnas.innerHTML += `<tr>
-      <td> ${rankingNumber} </td>
       <td> ${user.name.toUpperCase()} </td>
       <td> ${user.stats.percentTotal} </td>  
       <td> ${JSON.stringify(user.stats.reads.total)} </td> 
@@ -52,13 +50,29 @@ btnLima.addEventListener('click', () => {
   });
 });
 
+function onToggleSort() {
+  const direction = dropdownMenuButton.innerText;
+  if (direction == 'ASC') {
+    dropdownMenuButton.innerText = 'DESC';
+  } else {
+    dropdownMenuButton.innerText = 'ASC';
+  }
+  const sortedUsers = window.sortUsers(users, 'percent', direction);
+  dataAlumnas.innerHTML = '';
+  for (let user of sortedUsers) {
+    dataAlumnas.innerHTML += `<tr>
+    <td> ${user.name} </td>
+    <td> ${user.stats.percentTotal} </td>
+    </tr> `;
+  }
+}
+
 function searchStudents() {
   const search = searchAlumnas.value;
   const filteredUsers = window.filterUsers(users, search);
   dataAlumnas.innerHTML = '';
   filteredUsers.forEach(user => {
     dataAlumnas.innerHTML += `<tr>
-    <td> ${rankingNumber} </td>
     <td> ${user.name} </td>
     <td> ${user.stats.percentTotal} </td>  
     <td> ${JSON.stringify(user.stats.reads.total)} </td>  
