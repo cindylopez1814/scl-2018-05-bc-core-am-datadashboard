@@ -69,13 +69,12 @@ h5{
   background-color: transparent;
   background-image: none;
   border-color: #FF009E;
-  margin-left: 50%;
+  margin-left: 10%;
 }
-.search{
+.cont-search{
   margin: 3%;
   display: inline;
 }
-
 li:hover,
 .cohort:hover{
   background-color: #FF009E;
