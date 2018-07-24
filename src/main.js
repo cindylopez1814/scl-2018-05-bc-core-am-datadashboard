@@ -37,7 +37,14 @@ btnLima.addEventListener('click', () => {
       user.stats.exercises = {};
       user.stats.quizzes = {};
     } else {
-      dataAlumnas.innerHTML += `<p>${user.name.toUpperCase()} ${user.stats.percentTotal}  ${JSON.stringify(user.stats.reads.total)}  ${JSON.stringify(user.stats.exercises.total)}  ${JSON.stringify(user.stats.quizzes.total)}</p>`;
+      dataAlumnas.innerHTML += `<tr>
+      <td> ${rankingNumber} </td>
+      <td> ${user.name.toUpperCase()} </td>
+      <td> ${user.stats.percentTotal} </td>  
+      <td> ${JSON.stringify(user.stats.reads.total)} </td>  
+      <td> ${JSON.stringify(user.stats.exercises.total)} </td>  
+      <td> ${JSON.stringify(user.stats.quizzes.total)} </td>
+      </tr>`;
     }
   });
 });
@@ -47,6 +54,13 @@ function searchStudents() {
   const filteredUsers = window.filterUsers(users, search);
   dataAlumnas.innerHTML = '';
   filteredUsers.forEach(user => {
-    dataAlumnas.innerHTML += `<p>${user.name}</p>`;
+    dataAlumnas.innerHTML += `<tr>
+    <td> ${rankingNumber} </td>
+    <td> ${user.name} </td>
+    <td> ${user.stats.percentTotal} </td>  
+    <td> ${JSON.stringify(user.stats.reads.total)} </td>  
+    <td> ${JSON.stringify(user.stats.exercises.total)} </td>  
+    <td> ${JSON.stringify(user.stats.quizzes.total)} </td>
+    </tr>`;
   });
 }
