@@ -41,9 +41,12 @@ btnLima.addEventListener('click', () => {
       <td> ${rankingNumber} </td>
       <td> ${user.name.toUpperCase()} </td>
       <td> ${user.stats.percentTotal} </td>  
-      <td> ${JSON.stringify(user.stats.reads.total)} </td>  
-      <td> ${JSON.stringify(user.stats.exercises.total)} </td>  
+      <td> ${JSON.stringify(user.stats.reads.total)} </td> 
+      <td> ${JSON.stringify(user.stats.reads.percent)} </td> 
+      <td> ${JSON.stringify(user.stats.exercises.total)} </td>
+      <td> ${JSON.stringify(user.stats.exercises.percent)} </td>  
       <td> ${JSON.stringify(user.stats.quizzes.total)} </td>
+      <td> ${JSON.stringify(user.stats.quizzes.percent)} </td>
       </tr>`;
     }
   });
@@ -59,8 +62,11 @@ function searchStudents() {
     <td> ${user.name} </td>
     <td> ${user.stats.percentTotal} </td>  
     <td> ${JSON.stringify(user.stats.reads.total)} </td>  
-    <td> ${JSON.stringify(user.stats.exercises.total)} </td>  
+    <td> ${JSON.stringify(user.stats.reads.percent)} </td> 
+    <td> ${JSON.stringify(user.stats.exercises.total)} </td>
+    <td> ${JSON.stringify(user.stats.exercises.percent)} </td>  
     <td> ${JSON.stringify(user.stats.quizzes.total)} </td>
+    <td> ${JSON.stringify(user.stats.quizzes.percent)} </td>
     </tr>`;
   });
 }

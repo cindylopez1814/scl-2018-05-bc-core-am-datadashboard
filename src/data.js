@@ -68,7 +68,7 @@ window.computeUsersStats = (users, progress, courses) => {
       reads: {
         total: lectures,
         completitudLecturas: lecturesCompleted,
-        percentajeLecturas: percentLectures
+        percent: percentLectures
       },
       quizzes: {
         total: quizzes,
