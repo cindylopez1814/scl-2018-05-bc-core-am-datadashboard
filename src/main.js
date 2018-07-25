@@ -1,6 +1,6 @@
 const btnLima = document.getElementsByClassName('cohort');
 const dataAlumnas = document.getElementById('studentsName'); // aqui se impirme la tabla
-contData.style.display = 'none';
+//contData.style.display = 'none';
 
 let users = null;
 let progress = null;
@@ -54,19 +54,48 @@ for (let i = 0; i < btnLima.length; i++) {
   });
 }
 
-function onToggleSort() {
-  const direction = dropdownMenuButton.innerText;
+function onToggleSortName() {
+  const direction = filterName.innerText;
   if (direction === 'ASC') {
-    dropdownMenuButton.innerText = 'DESC';
+    filterName.innerText = 'O.Alfabetico-DESC';
   } else {
-    dropdownMenuButton.innerText = 'ASC';
+    filterName.innerText = 'O.Alfabetico-ASC';
   }
-  const sortedUsers = window.sortUsers(users, 'percent', direction);
+  const sortedUsers = window.sortUsers(users, 'name', direction);
   dataAlumnas.innerHTML = '';
   for (let user of sortedUsers) {
     dataAlumnas.innerHTML += `<tr>
     <td> ${user.name} </td>
     <td> ${user.stats.percentTotal} </td>
+    <td> ${JSON.stringify(user.stats.reads.total)} </td> 
+    <td> ${JSON.stringify(user.stats.reads.percent)} </td> 
+    <td> ${JSON.stringify(user.stats.exercises.total)} </td>
+    <td> ${JSON.stringify(user.stats.exercises.percent)} </td>  
+    <td> ${JSON.stringify(user.stats.quizzes.total)} </td>
+    <td> ${JSON.stringify(user.stats.quizzes.percent)} </td>
+    </tr>`;
+  }
+}
+
+function onToggleSort() {
+  const direction = filterCOmpletitud.innerText;
+  if (direction === 'ASC') {
+    filterCOmpletitud.innerText = 'O.Completitud-DESC';
+  } else {
+    filterCOmpletitud.innerText = 'O.Completitud-ASC';
+  }
+  const sortedUsers = window.sortUsers(users, 'percentTotal', direction);
+  dataAlumnas.innerHTML = '';
+  for (let user of sortedUsers) {
+    dataAlumnas.innerHTML += `<tr>
+    <td> ${user.name} </td>
+    <td> ${user.stats.percentTotal} </td>
+    <td> ${JSON.stringify(user.stats.reads.total)} </td> 
+    <td> ${JSON.stringify(user.stats.reads.percent)} </td> 
+    <td> ${JSON.stringify(user.stats.exercises.total)} </td>
+    <td> ${JSON.stringify(user.stats.exercises.percent)} </td>  
+    <td> ${JSON.stringify(user.stats.quizzes.total)} </td>
+    <td> ${JSON.stringify(user.stats.quizzes.percent)} </td>
     </tr> `;
   }
 }

@@ -90,19 +90,19 @@ window.sortUsers = (users, orderBy, orderDirection) => {
   if (orderBy === 'name') {
     return users.sort((first, second) => {
       if (orderDirection === 'ASC') {
-        return first.name.localCompare(second.name);
+        return first.name.localeCompare(second.name);
       } else {
-        return first.name.localCompare(second.name) * -1;
+        return first.name.localeCompare(second.name) * -1;
       }
     });
   }
 
-  if (orderBy === 'percent') {
+  if (orderBy === 'percentTotal') {
     return users.sort((first, second) => {
       if (orderDirection === 'ASC') {
-        return first.stats.percent - second.stats.percent;
+        return first.stats.percentTotal - second.stats.percentTotal;
       } else {
-        return (first.stats.percent - second.stats.percent) * -1;
+        return (first.stats.percentTotal - second.stats.percentTotal) * -1;
       }
     });
   }

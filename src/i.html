@@ -46,13 +46,15 @@
           </picture>
         </div>
         <div class="col-9 mail-content">
-          <h5>Training Manager<span class="mail">tm@laboratoria.cl</span></h5>
+          <h5>Training Manager
+            <span class="mail">tm@laboratoria.cl</span>
+          </h5>
         </div>
       </div>
       <!-- menu desplegable de cohorts sacar de bootstrap -->
       <div class="row">
         <div class="col-sm-12 cohort">
-            <h5>LIMA</h5>
+          <h5>LIMA</h5>
         </div>
       </div>
     </aside>
@@ -63,14 +65,23 @@
       <!--contenido de data-->
       <!--div con menu de ordenar / filtrar y buscar bootstrap-->
       <div class="dropdown cont-search">
-        <form class="form-inline ">
-          <input class="form-control mr-sm-2 search" onkeyup="searchStudents()"id = "searchAlumnas" type="search" placeholder="Buscar Alumna" aria-label="Search">
-          <div class="dropright">
-            <button class="btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" onclick ="onToggleSort()"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="col-sm-6 dropright">
+          <button class="btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Filtrar
-            </button> 
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" id="filterName" onclick="onToggleSortName()">Orden Alfabético</a>
+            <a class="dropdown-item" onclick="onToggleSort()" id="filterCOmpletitud" href="#">Orden Completitud</a>
           </div>
-        </form>
+        </div>
+        <div class="col-sm-6">
+          <form class="form-inline ">
+            <input class="form-control mr-sm-2" type="search" onkeyup="searchStudents()" id="searchAlumnas" placeholder="Buscar Alumna"
+              aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 filtro" type="submit" onclick="searchStudents()">Buscar</button>
+          </form>
+        </div>
       </div>
       <article id="ranking" class="studentList row">
         <table id="studentsRanking" class="table col-sm-12 table-responsive-sm table-hover">
@@ -88,9 +99,9 @@
           </thead>
           <tbody id="studentsName"></tbody>
         </table>
-      </article>  
+      </article>
     </div>
-  <!-- fin col de la estructura -->
+    <!-- fin col de la estructura -->
   </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
