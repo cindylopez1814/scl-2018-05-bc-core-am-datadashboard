@@ -57,15 +57,15 @@ for (let i = 0; i < btnLima.length; i++) {
 function onToggleSortName() {
   const direction = filterName.innerText;
   if (direction === 'ASC') {
-    filterName.innerText = 'O.Alfabetico-DESC';
+    filterName.innerText = 'Alfabetico-DESC';
   } else {
-    filterName.innerText = 'O.Alfabetico-ASC';
+    filterName.innerText = 'Alfabetico-ASC';
   }
   const sortedUsers = window.sortUsers(users, 'name', direction);
   dataAlumnas.innerHTML = '';
   for (let user of sortedUsers) {
     dataAlumnas.innerHTML += `<tr>
-    <td> ${user.name} </td>
+    <td> ${user.name.toUpperCase()} </td>
     <td> ${user.stats.percentTotal} </td>
     <td> ${JSON.stringify(user.stats.reads.total)} </td> 
     <td> ${JSON.stringify(user.stats.reads.percent)} </td> 
@@ -80,15 +80,15 @@ function onToggleSortName() {
 function onToggleSort() {
   const direction = filterCOmpletitud.innerText;
   if (direction === 'ASC') {
-    filterCOmpletitud.innerText = 'O.Completitud-DESC';
+    filterCOmpletitud.innerText = 'Completitud-DESC';
   } else {
-    filterCOmpletitud.innerText = 'O.Completitud-ASC';
+    filterCOmpletitud.innerText = 'Completitud-ASC';
   }
   const sortedUsers = window.sortUsers(users, 'percentTotal', direction);
   dataAlumnas.innerHTML = '';
   for (let user of sortedUsers) {
     dataAlumnas.innerHTML += `<tr>
-    <td> ${user.name} </td>
+    <td> ${user.name.toUpperCase()} </td>
     <td> ${user.stats.percentTotal} </td>
     <td> ${JSON.stringify(user.stats.reads.total)} </td> 
     <td> ${JSON.stringify(user.stats.reads.percent)} </td> 
@@ -106,7 +106,7 @@ function searchStudents() {
   dataAlumnas.innerHTML = '';
   filteredUsers.forEach(user => {
     dataAlumnas.innerHTML += `<tr>
-    <td> ${user.name} </td>
+    <td> ${user.name.toUpperCase()} </td>
     <td> ${user.stats.percentTotal} </td>  
     <td> ${JSON.stringify(user.stats.reads.total)} </td>  
     <td> ${JSON.stringify(user.stats.reads.percent)} </td> 
