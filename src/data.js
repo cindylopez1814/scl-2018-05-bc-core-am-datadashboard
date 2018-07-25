@@ -78,7 +78,7 @@ window.computeUsersStats = (users, progress, courses) => {
       exercises: {
         total: exercises,
         completed: exercisesCompleted,
-        percent: percentExercise
+        percent: percentExercises
       },
     };
     return users;

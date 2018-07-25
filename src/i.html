@@ -28,7 +28,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item liNav">
-          <button class="btn btn-sucess cohort" type="button" id="">
+          <button class="btn btn-sucess cohort" type="button">
             LIMA
           </button>
         </li>
@@ -51,30 +51,27 @@
       </div>
       <!-- menu desplegable de cohorts sacar de bootstrap -->
       <div class="row">
-        <div class="col-sm-12 cohort" id="btnLima">
+        <div class="col-sm-12 cohort">
             <h5>LIMA</h5>
         </div>
       </div>
     </aside>
-
-    <section class="col-sm-9" id="contData">
+    <section id="gifLoad">
+      <img src="img/gif-load.gif" alt="gif-load">
+    </section>
+    <div class="col-sm-9" id="contData">
       <!--contenido de data-->
       <!--div con menu de ordenar / filtrar y buscar bootstrap-->
       <div class="dropdown cont-search">
         <form class="form-inline ">
           <input class="form-control mr-sm-2 search" onkeyup="searchStudents()"id = "searchAlumnas" type="search" placeholder="Buscar Alumna" aria-label="Search">
-          <button class="btn my-2 my-sm-0" type="submit">Buscar</button>
           <div class="dropright">
-              <button class="btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" onclick ="onToggleSort()"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Filtrar
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a  class="dropdown-item">Orden Alfabético</a>
-                <a class="dropdown-item">Orden Completitud</a>
-            </div>
+            <button class="btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" onclick ="onToggleSort()"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Filtrar
+            </button> 
           </div>
+        </form>
       </div>
-      </form>
       <article id="ranking" class="studentList row">
         <table id="studentsRanking" class="table col-sm-12 table-responsive-sm table-hover">
           <thead>
@@ -91,9 +88,9 @@
           </thead>
           <tbody id="studentsName"></tbody>
         </table>
-      </article>
-    </section>
-    <!-- fin col de la estructura -->
+      </article>  
+    </div>
+  <!-- fin col de la estructura -->
   </section>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
