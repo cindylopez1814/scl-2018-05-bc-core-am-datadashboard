@@ -65,23 +65,20 @@
       <!--contenido de data-->
       <!--div con menu de ordenar / filtrar y buscar bootstrap-->
       <div class="dropdown cont-search">
-        <div class="col-sm-6 dropright">
-          <button class="btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            Filtrar
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" id="filterName" onclick="onToggleSortName()">Orden Alfabético</a>
-            <a class="dropdown-item" onclick="onToggleSort()" id="filterCOmpletitud" href="#">Orden Completitud</a>
+        <form class="form-inline ">
+          <input class="form-control mr-sm-2 search" type="search" onkeyup="searchStudents()" id="searchAlumnas" placeholder="Buscar Alumna"
+            aria-label="Search">
+          <div class="dropright">
+            <button class="btn btn-secondary dropdown-toggle filter" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Filtrar
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" id="filterName" onclick="onToggleSortName()">Orden Alfabético</a>
+              <a class="dropdown-item" onclick="onToggleSort()" id="filterCOmpletitud" href="#">Orden Completitud</a>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <form class="form-inline ">
-            <input class="form-control mr-sm-2" type="search" onkeyup="searchStudents()" id="searchAlumnas" placeholder="Buscar Alumna"
-              aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0 filtro" type="submit" onclick="searchStudents()">Buscar</button>
-          </form>
-        </div>
+        </form>
       </div>
       <article id="ranking" class="studentList row">
         <table id="studentsRanking" class="table col-sm-12 table-responsive-sm table-hover">

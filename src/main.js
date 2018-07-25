@@ -1,6 +1,6 @@
 const btnLima = document.getElementsByClassName('cohort');
 const dataAlumnas = document.getElementById('studentsName'); // aqui se impirme la tabla
-//contData.style.display = 'none';
+contData.style.display = 'none';
 
 let users = null;
 let progress = null;
